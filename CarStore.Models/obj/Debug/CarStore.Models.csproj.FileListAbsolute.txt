@@ -1,0 +1,9 @@
+C:\Users\hilys\source\repos\CarStore\CarStore.Models\bin\Debug\CarStore.Models.dll
+C:\Users\hilys\source\repos\CarStore\CarStore.Models\bin\Debug\CarStore.Models.pdb
+C:\Users\hilys\source\repos\CarStore\CarStore.Models\obj\Debug\CarStore.Models.csprojAssemblyReference.cache
+C:\Users\hilys\source\repos\CarStore\CarStore.Models\obj\Debug\CarStore.Models.csproj.CoreCompileInputs.cache
+C:\Users\hilys\source\repos\CarStore\CarStore.Models\obj\Debug\CarStore.Models.dll
+C:\Users\hilys\source\repos\CarStore\CarStore.Models\obj\Debug\CarStore.Models.pdb
+C:\Users\hilys\source\repos\CarStore\CarStore.Models\bin\Debug\System.Data.SqlClient.dll
+C:\Users\hilys\source\repos\CarStore\CarStore.Models\bin\Debug\System.Data.SqlClient.xml
+C:\Users\hilys\source\repos\CarStore\CarStore.Models\obj\Debug\CarStore.Models.csproj.CopyComplete

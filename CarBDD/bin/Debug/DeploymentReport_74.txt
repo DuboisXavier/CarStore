@@ -1,0 +1,47 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       Aucun
+
+** Actions de l'utilisateur
+     Supprimer
+       Autorisation (Autorisation)
+       Autorisation (Autorisation)
+     Créer
+       [dbo].[Adresse] (Table)
+       [dbo].[Categorie_piece] (Table)
+       [dbo].[Commande] (Table)
+       [dbo].[Commande_piece] (Table)
+       [dbo].[Marque] (Table)
+       [dbo].[Photos] (Table)
+       [dbo].[Piece] (Table)
+       [dbo].[Utilisateur] (Table)
+       [dbo].[FK_Commande_T] (Clé étrangère)
+       [dbo].[FK_Commande_piece_ToCommande] (Clé étrangère)
+       [dbo].[FK_Commande_piece_ToPiece] (Clé étrangère)
+       [dbo].[FK_Photos_Piece] (Clé étrangère)
+       [dbo].[FK_PieceMarque] (Clé étrangère)
+       [dbo].[FK_PieceCategorie] (Clé étrangère)
+       [dbo].[FK_Utilisateur_Adresse] (Clé étrangère)
+       [dbo].[GetPostSalt] (Fonction)
+       [dbo].[GetPreSalt] (Fonction)
+       [dbo].[CheckUser] (Procédure)
+       [dbo].[CSP_AddAdresse] (Procédure)
+       [dbo].[CSP_AddCategoriePiece] (Procédure)
+       [dbo].[CSP_AddCommand] (Procédure)
+       [dbo].[CSP_AddMarque] (Procédure)
+       [dbo].[CSP_AddPiece] (Procédure)
+       [dbo].[CSP_AddUtilisateur] (Procédure)
+       [dbo].[CSP_UpdateAdresse] (Procédure)
+       [dbo].[CSP_UpdateCategoriePiece] (Procédure)
+       [dbo].[CSP_UpdateCommand] (Procédure)
+       [dbo].[CSP_UpdateMarque] (Procédure)
+       [dbo].[CSP_UpdatePiece] (Procédure)
+       [dbo].[CSP_UpdateUtilisateur] (Procédure)
+
+** Actions de support

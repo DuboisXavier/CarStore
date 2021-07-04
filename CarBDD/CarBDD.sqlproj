@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>CarBDD</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{d3aeffdb-d7d0-41f0-a936-0a20ab796cad}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath />
+    <RootNamespace>CarBDD</RootNamespace>
+    <AssemblyName>CarBDD</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Post_Deployed" />
+    <Folder Include="Stored_Procedures" />
+    <Folder Include="Stored_Procedures\Categorie" />
+    <Folder Include="Stored_Procedures\Marque" />
+    <Folder Include="Stored_Procedures\Piece" />
+    <Folder Include="Stored_Procedures\Adresse" />
+    <Folder Include="Stored_Procedures\Utilisateur" />
+    <Folder Include="functions" />
+    <Folder Include="Stored_Procedures\Auth" />
+    <Folder Include="Stored_Procedures\Commande" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Marque.sql" />
+    <Build Include="Tables\Piece.sql" />
+    <Build Include="Tables\Categorie_piece.sql" />
+    <Build Include="Stored_Procedures\Categorie\CSP_AddCategoriePiece.sql" />
+    <Build Include="Stored_Procedures\Categorie\CSP_UpdateCategoriePiece.sql" />
+    <Build Include="Stored_Procedures\Marque\CSP_AddMarque.sql" />
+    <Build Include="Stored_Procedures\Marque\CSP_UpdateMarque.sql" />
+    <Build Include="Stored_Procedures\Piece\CSP_UpdatePiece.sql" />
+    <Build Include="Stored_Procedures\Piece\CSP_AddPiece.sql" />
+    <Build Include="Tables\Adresse.sql" />
+    <Build Include="Stored_Procedures\Adresse\CSP_AddAdresse.sql" />
+    <Build Include="Stored_Procedures\Adresse\CSP_UpdateAdresse.sql" />
+    <Build Include="Tables\Utilisateur.sql" />
+    <Build Include="Stored_Procedures\Utilisateur\CSP_AddUtilisateur.sql" />
+    <Build Include="Stored_Procedures\Utilisateur\CSP_UpdateUtilisateur.sql" />
+    <Build Include="Tables\Photos.sql" />
+    <Build Include="functions\GetPreSalt.sql" />
+    <Build Include="functions\GetPostSalt.sql" />
+    <Build Include="Stored_Procedures\Auth\CheckUser.sql" />
+    <Build Include="Tables\Commande.sql" />
+    <Build Include="Tables\Commande_piece.sql" />
+    <Build Include="Stored_Procedures\Commande\CSP_AddCommand.sql" />
+    <Build Include="Stored_Procedures\Commande\CSP_UpdateCommand.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Post_Deployed\Marque.sql" />
+  </ItemGroup>
+</Project>

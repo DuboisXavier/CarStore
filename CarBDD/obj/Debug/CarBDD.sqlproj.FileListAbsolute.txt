@@ -1,0 +1,10 @@
+C:\Users\hilys\source\repos\CarStore\CarBDD\bin\Debug\CarBDD.dacpac
+C:\Users\hilys\source\repos\CarStore\CarBDD\bin\Debug\CarBDD.dll
+C:\Users\hilys\source\repos\CarStore\CarBDD\bin\Debug\CarBDD.pdb
+C:\Users\hilys\source\repos\CarStore\CarBDD\obj\Debug\CarBDD.dll
+C:\Users\hilys\source\repos\CarStore\CarBDD\obj\Debug\CarBDD.pdb
+C:\Users\hilys\source\repos\CarStore\CarBDD\obj\Debug\CarBDD.sqlprojAssemblyReference.cache
+C:\Users\hilys\source\repos\CarStore\CarBDD\obj\Debug\Model.xml
+C:\Users\hilys\source\repos\CarStore\CarBDD\obj\Debug\refactor.xml
+C:\Users\hilys\source\repos\CarStore\CarBDD\obj\Debug\postdeploy.sql
+C:\Users\hilys\source\repos\CarStore\CarBDD\obj\Debug\predeploy.sql
